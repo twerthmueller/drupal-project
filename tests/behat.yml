@@ -12,7 +12,7 @@ default:
   extensions:
     Behat\MinkExtension:
       base-url: 'http://localhost'
-      files_path: '/Users/weri/Projects/mountaincamp-testing/tests/fixtures/files'
+      files_path: '/var/www/drupalvm/drupal/tests/fixtures/files'
       goutte: ~
       javascript_session: 'selenium2'
       browser_name: 'chrome'
@@ -22,13 +22,13 @@ default:
       api_driver: 'drupal'
       blackbox: ~
       drupal:
-        drupal_root: '/Users/weri/Projects/mountaincamp-testing/web'
+        drupal_root: '/var/www/drupalvm/drupal/web'
       selectors:
         message_selector: '.messages'
         error_message_selector: '.messages.messages--error'
         success_message_selector: '.messages.messages--status'
       subcontexts:
         paths:
-          - '/Users/weri/Projects/mountaincamp-testing/web/modules'
+          - '/var/www/drupalvm/drupal/web/modules'
   formatters:
     progress: ~
