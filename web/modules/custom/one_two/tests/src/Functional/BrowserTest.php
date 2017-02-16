@@ -9,6 +9,10 @@ use Drupal\Tests\BrowserTestBase;
  * @group one_two
  */
 class BrowserTest extends BrowserTestBase {
+
+  /**
+   * Test register.
+   */
   function testDrupalGet() {
     $this->drupalGet('user/register');
     $this->assertSession()->pageTextContains('Create new account');
